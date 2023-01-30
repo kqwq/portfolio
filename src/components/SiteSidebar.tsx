@@ -58,7 +58,7 @@ const SiteSidebar = ({ children }) => {
 
     <Flex direction={{
       base: 'column', lg: 'row'
-    }} bg="black" h="100vh" >
+    }} h="100vh" >
       <DarkModeSwitch />
 
       <Box w={{ base: '100%', lg: '300px' }} bg={colors.primary} >
@@ -69,8 +69,9 @@ const SiteSidebar = ({ children }) => {
             <Text color="white" fontSize="3xl" fontWeight="bold" >
               {identity.name.toLocaleUpperCase()}
             </Text >
-            <Text color="white" fontSize="1xl" >
-              {identity.title.toLocaleUpperCase()}
+            <Text color="white" fontSize="1xl" textAlign="center" >
+              FULL STACK<br />
+              SOFTWARE ENGINEER
             </Text >
 
           </VStack>
@@ -124,7 +125,7 @@ const SiteSidebar = ({ children }) => {
 
       </Box >
 
-      <Box w={{ base: '100%', lg: 'calc(100% - 300px)' }} bg="white" >
+      <Box w={{ base: '100%', lg: 'calc(100% - 300px)' }} >
         {children}
       </Box>
     </Flex >
