@@ -65,26 +65,28 @@ const projects:projectProps[] = [
     technologies: [tech.Next, tech.ChakraUI, tech.TypeScript, tech.LaTeX],
     priority: 6,
   },
-  {
-    timeRange: "2022",
-    title: "Options Trading Tools",
-    domain: "stock-intervals.vercel.app",
-    tagline: "Tools for Options Trading.",
-    descriptionHtml: "A collection of .",
-    technologies: [tech.React, tech.TailwindCSS, tech.JavaScript, tech.Express],
-    priority: 4,
-  },
+
 
 
   
   {
-    timeRange: "2021 - 2022",
+    timeRange: "2022",
     title: "LU Snipes",
+    domain: "26-2.online",
     tagline: "Snipe or be sniped.",
-     descriptionHtml: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+     descriptionHtml: "MERN stack",
     priority: 1000,
-    technologies: [tech.Python],
-  }
+    technologies: [tech.MongoDB, tech.Express, tech.Next, tech.ChakraUI, tech.NodeJS],
+  },
+  {
+    timeRange: "2021-2022",
+    title: "Options Trading Tools",
+    domain: "stock-intervals.vercel.app",
+    tagline: "Tools for Options Trading.",
+    descriptionHtml: "A collection of .",
+    technologies: [tech.React, tech.TailwindCSS, tech.NodeJS, tech.Express],
+    priority: 4,
+  },
 ]
 
 const sidebarLinks = [

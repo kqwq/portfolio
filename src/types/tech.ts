@@ -20,6 +20,7 @@ enum tech {
   // Languages
   TypeScript,
   JavaScript,
+  NodeJS,
   Python,
   Java,
 }
@@ -50,7 +51,10 @@ const techMap = {
     name: "JavaScript",
     url: "https://www.javascript.com/"
   },
-
+  [tech.NodeJS]: {
+    name: "Node.js",
+    url: "https://nodejs.org/en/"
+  },
   [tech.TailwindCSS]: {
     name: "Tailwind CSS",
     url: "https://tailwindcss.com/"
