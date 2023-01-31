@@ -23,7 +23,7 @@ const socialMediaLinks = [
   {
     name: "Email",
     user: "k" + "well" + "s8@" + "pr"+ "ot" +"on.me",
-    url: "mai " +"lto "+":k" + "well" + "s8@" + "pr"+ "ot" +"on.me",
+    url: "mai" +"lto"+":k" + "well" + "s8@" + "pr"+ "ot" +"on.me",
     icon: MdOutlineEmail,
   },
   {
@@ -59,7 +59,7 @@ const projects:projectProps[] = [
   {
     timeRange: "2021 - 2022",
     title: "Options Trading Tools",
-    domain: "google.com",
+    domain: "stock-intervals.vercel.app",
     tagline: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     descriptionHtml: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     technologies: [tech.Next, tech.TailwindCSS, tech.TypeScript, tech.Express],
