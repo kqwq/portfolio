@@ -29,7 +29,7 @@ const Project = (
           {/* External link */}
           {
             domain && <NextLink href={link} passHref target="_blank">
-              <ChakraLink color={'blue.500'} isExternal>
+              <ChakraLink as="span" color={'blue.500'} isExternal>
                 {domain}
               </ChakraLink>
               <LinkIcon mx={2} />
@@ -42,7 +42,7 @@ const Project = (
         <HStack>
           {
             technologies?.length && technologies.map((technology, index) => (
-              <NextLink target={"_blank"} href={techMap[technology].url} passHref>
+              <NextLink key={index} target={"_blank"} href={techMap[technology].url} passHref>
                 <ChakraLink as="span" fontSize="sm" fontWeight="bold"
                   bg={colorMode === "dark" ? colors.dark : colors.light} display="inline" px={2} py={1}
                 >{techMap[technology].name}</ChakraLink>

@@ -1,7 +1,7 @@
 
 import {projectProps} from "./types/project"
 import { tech, techMap } from "./types/tech"
-import { FaLinkedin,FaGithub } from "react-icons/fa"
+import { FaLinkedin,FaGithub, FaDiscord } from "react-icons/fa"
 import { MdOutlineEmail} from "react-icons/md"
 
 const colors = {
@@ -19,6 +19,19 @@ const identity = {
 }
 
 const socialMediaLinks = [
+
+  {
+    name: "Email",
+    user: "k" + "well" + "s8@" + "pr"+ "ot" +"on.me",
+    url: "mai " +"lto "+":k" + "well" + "s8@" + "pr"+ "ot" +"on.me",
+    icon: MdOutlineEmail,
+  },
+  {
+    name: "LinkedIn",
+    user: "Kyle Wells",
+    url: "https://www.linkedin.com/in/kqwq/",
+    icon: FaLinkedin,
+  },
   {
     name: "GitHub",
     user: "kqwq",
@@ -26,17 +39,11 @@ const socialMediaLinks = [
     icon: FaGithub,
   },
   {
-    name: "LinkedIn",
-    user: "user",
-    url: "https://www.linkedin.com/in/kqwq/",
-    icon: FaLinkedin,
-  },
-  {
-    name: "Email",
-    user: "k" + "well" + "s8@" + "pr"+ "ot" +"on.me",
-    url: "mai " +"lto "+":k" + "well" + "s8@" + "pr"+ "ot" +"on.me",
-    icon: MdOutlineEmail,
-  },
+    name: "Discord",
+    user: "kylew#6389",
+    url: "",
+    icon: FaDiscord,
+  }
 ]
 
 const projects:projectProps[] = [
@@ -88,12 +95,12 @@ const sidebarLinks = [
     link: "/portfolio",
   },
   {
-    name: "Contact",
+    name: "Contact Me",
     link: "/contact",
   },
   {
     name: "Resume",
-    link: "/resume",
+    link: "/blank.pdf",
     isExternal: true,
   },
 
