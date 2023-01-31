@@ -58,8 +58,7 @@ const SiteSidebar = ({ children }) => {
 
     <Flex direction={{
       base: 'column', lg: 'row'
-    }} h="100vh" >
-      <DarkModeSwitch />
+    }} minH="100vh">
 
       <Box w={{ base: '100%', lg: '300px' }} bg={colors.primary} >
 
@@ -126,6 +125,8 @@ const SiteSidebar = ({ children }) => {
       </Box >
 
       <Box w={{ base: '100%', lg: 'calc(100% - 300px)' }} >
+
+        <DarkModeSwitch />
         {children}
       </Box>
     </Flex >
