@@ -1,4 +1,4 @@
-import { Box, Heading, HStack, Link as ChakraLink, ListItem, Spacer, Text, useColorMode, VStack } from '@chakra-ui/react'
+import { Box, Heading, HStack, Link as ChakraLink, ListItem, Spacer, Stack, Text, useColorMode, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { colors } from '../constants'
 import NextLink from 'next/link'
@@ -22,7 +22,12 @@ const Project = (
       </Box>
       {/* Timeline content */}
       <VStack align="start" mt={1}>
-        <HStack justify="space-between" w="100%">
+        <Stack justify="space-between" w="100%" direction={
+          {
+            base: 'column',
+            sm: 'row'
+          }
+        }>
           <Heading as="h3" fontSize="2xl" fontWeight="bold"
         /*  bgg={colorMode === "dark" ? colors.dark : colors.light} */ display="inline"
           >{title}</Heading>
@@ -35,7 +40,7 @@ const Project = (
               <LinkIcon mx={2} />
             </NextLink>
           }
-        </HStack>
+        </Stack>
         <Heading as="h4" fontSize="xl" fontWeight="normal">{tagline}</Heading>
 
         <Box dangerouslySetInnerHTML={{ __html: descriptionHtml }} />
@@ -43,7 +48,7 @@ const Project = (
           {
             technologies?.length && technologies.map((technology, index) => (
               <NextLink key={index} target={"_blank"} href={techMap[technology].url} passHref>
-                <ChakraLink as="span" fontSize="sm" fontWeight="bold"
+                <ChakraLink whiteSpace="nowrap" as="span" fontSize="sm" fontWeight="bold"
                   bg={colorMode === "dark" ? colors.dark : colors.light} display="inline" px={2} py={1}
                 >{techMap[technology].name}</ChakraLink>
               </NextLink>
