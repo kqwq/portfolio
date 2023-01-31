@@ -48,37 +48,39 @@ const socialMediaLinks = [
 
 const projects:projectProps[] = [
   {
-    timeRange: "2020 - Present",
-    title: "PhitNest Website",
+    timeRange: "2022",
+    title: "PhitNest.com",
     domain: "phitnest.com",
-    tagline: "A website for a startup that helps people connect at the gym.",
-    descriptionHtml: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    technologies: [tech.Next, tech.ChakraUI, tech.TypeScript, tech.Express],
-    priority: 5,
+    tagline: "A website for a mobile app that helps people connect at the gym.",
+    descriptionHtml: "PhitNest is an mobile app that allows people to discover other gym-goers in their local community. The website uses a simple yet secure MERN stack built with Next.js and TypeScript to manage an invite list.",
+    technologies: [tech.Next, tech.ChakraUI, tech.TypeScript, tech.Express, tech.MongoDB],
+    priority: 500,
   },
   {
-    timeRange: "2021 - 2022",
-    title: "Options Trading Tools",
-    domain: "stock-intervals.vercel.app",
-    tagline: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    descriptionHtml: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    technologies: [tech.Next, tech.TailwindCSS, tech.TypeScript, tech.Express],
-    priority: 4,
-  },
-  {
-    timeRange: "2021 - 2022",
+    timeRange: "2022",
     title: "Discrete Math Tools",
     domain: "math350.vercel.app",
-    tagline: "A collection of tools for discrete math.",
-    descriptionHtml: "Lorem ",
+    tagline: "Step-by-step solutions to common discrete problems.",
+    descriptionHtml: "I built this website to help my friends and I with our Discrete Math class at university. It displays step-by-step mathematical solutions given the inputs for the Euclidean algorithm, Chinese remainder theorem as well as a primitive root checker. Based on what I learned from my previous <a class='a' href='https://kqwq.github.io/min-spanning-tree-v2/'>spanning tree</a> and <a class='a' href='https://kqwq.github.io/model-diagnostics/dist/'>regression model</a> projects.", 
     technologies: [tech.Next, tech.ChakraUI, tech.TypeScript, tech.LaTeX],
     priority: 6,
   },
+  {
+    timeRange: "2022",
+    title: "Options Trading Tools",
+    domain: "stock-intervals.vercel.app",
+    tagline: "Tools for Options Trading.",
+    descriptionHtml: "A collection of .",
+    technologies: [tech.React, tech.TailwindCSS, tech.JavaScript, tech.Express],
+    priority: 4,
+  },
+
 
   
   {
     timeRange: "2021 - 2022",
-    title: "Project 3",
+    title: "LU Snipes",
+    tagline: "Snipe or be sniped.",
      descriptionHtml: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     priority: 1000,
     technologies: [tech.Python],

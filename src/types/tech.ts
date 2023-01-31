@@ -1,17 +1,27 @@
 
 // Enum of all possible technologies (e.g. React, Next.js, etc.) with a URL to their homepage
 enum tech {
+
+  // DBs
+  MongoDB,
+
+  // Middlewares
+  Express,
+
+  // Frontend
   React,
   Next,
+
+  // Styling
   ChakraUI,
-  TypeScript,
-  JavaScript,
-  Express,
   TailwindCSS,
   LaTeX,
+
+  // Languages
+  TypeScript,
+  JavaScript,
   Python,
   Java,
-  MongoDB,
 }
 
 // Map name and URL of all possible technologies
@@ -23,6 +33,10 @@ const techMap = {
   [tech.Next]: {
     name: "Next.js",
     url: "https://nextjs.org/"
+  },
+  [tech.Express]: {
+    name: "Express",
+    url: "https://expressjs.com/"
   },
   [tech.ChakraUI]: {
     name: "Chakra UI",
@@ -36,10 +50,7 @@ const techMap = {
     name: "JavaScript",
     url: "https://www.javascript.com/"
   },
-  [tech.Express]: {
-    name: "Express",
-    url: "https://expressjs.com/"
-  },
+
   [tech.TailwindCSS]: {
     name: "Tailwind CSS",
     url: "https://tailwindcss.com/"

@@ -15,13 +15,13 @@ const Project = (
   const link = `https://${domain}`
 
   return (
-    <ListItem my={4} listStyleType="square">
+    <ListItem my={6} listStyleType="square" >
       {/* Timeline date */}
-      <Box>
+      <Box  >
         <time >{timeRange}</time>
-      </Box>
+      </Box >
       {/* Timeline content */}
-      <VStack align="start" mt={1}>
+      <VStack align="start" mt={1} >
         <Stack justify="space-between" w="100%" direction={
           {
             base: 'column',
@@ -46,7 +46,7 @@ const Project = (
         <Box dangerouslySetInnerHTML={{ __html: descriptionHtml }} />
         <HStack>
           {
-            technologies?.length && technologies.map((technology, index) => (
+            technologies?.length && technologies.sort().map((technology, index) => (
               <NextLink key={index} target={"_blank"} href={techMap[technology].url} passHref>
                 <ChakraLink whiteSpace="nowrap" as="span" fontSize="sm" fontWeight="bold"
                   bg={colorMode === "dark" ? colors.dark : colors.light} display="inline" px={2} py={1}
@@ -55,7 +55,7 @@ const Project = (
             ))
           }
         </HStack>
-      </VStack>
+      </VStack >
       <Spacer my={4} />
       <hr />
 
